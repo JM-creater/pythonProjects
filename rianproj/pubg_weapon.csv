@@ -1,0 +1,31 @@
+bullet_type,damage,magazine,range,fire_rate,bullet_speed,type
+7.62,49,30,400,0.08,715,Assault Rifle
+7.62,49,30,400,0.01,710,Assault Rifle
+7.62,47,30,400,0.086,715,Assault Rifle
+7.62,49,30,500,0.01,715,Assault Rifle
+5.56,43,30,600,0.086,880,Assault Rifle
+5.56,43,30,600,0.096,880,Assault Rifle
+5.56,43,30,600,0.086,890,Assault Rifle
+5.56,43,30,600,0.01,900,Assault Rifle
+5.56,43,30,600,0.086,880,Assault Rifle
+5.56,43,30,600,0.096,880,Assault Rifle
+9,31,19,50,0.055,300,Submachine Gun
+9,26,25,200,0.048,350,Submachine Gun
+9,35,53,300,0.076,300,Submachine Gun
+9,33,30,200,0.0645,330,Submachine Gun
+0.45,40,30,200,0.086,280,Submachine Gun
+0.45,39,25,300,0.092,250,Submachine Gun
+12,216,2,25,0.2,370,Shotgun
+12,216,5,25,0.7,360,Shotgun
+12,198,5,25,0.25,350,Shotgun
+0.3,105,5,900,0.09,910,Sniper Rifle
+7.62,79,5,800,0.01,790,Sniper Rifle
+7.62,75,5,800,0.01,760,Sniper Rifle
+0.45,66,5,600,0.01,710,Sniper Rifle
+12,160,2,25,0.01,330,Pistol
+7.62,55,7,25,0.01,330,Pistol
+0.45,55,6,25,1.85,250,Pistol
+0.45,41,15,25,1.8,250,Pistol
+9,35,7,25,1.9,380,Pistol
+9,23,17,25,0.6,375,Pistol
+9,22,20,60,0.25,400,Pistol

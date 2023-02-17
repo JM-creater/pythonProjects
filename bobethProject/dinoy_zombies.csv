@@ -1,0 +1,201 @@
+age,sex,rurality,food,medication,sanitation,zombie
+18,Female,Rural,Food,Medication,Sanitation,Human
+18,Male,Rural,Food,Medication,Sanitation,Human
+18,Male,Rural,Food,Medication,Sanitation,Human
+19,Male,Rural,Food,Medication,Sanitation,Human
+19,Male,Urban,Food,Medication,Sanitation,Human
+19,Female,Urban,Food,Medication,Sanitation,Human
+20,Female,Suburban,No food,Medication,Sanitation,Human
+20,Female,Rural,Food,No medication,Sanitation,Human
+21,Female,Urban,No food,No medication,Sanitation,Human
+21,Female,Rural,No food,No medication,Sanitation,Human
+21,Male,Rural,Food,No medication,No sanitation,Human
+21,Male,Rural,No food,Medication,Sanitation,Human
+22,Male,Suburban,Food,Medication,Sanitation,Human
+23,Male,Rural,Food,Medication,No sanitation,Human
+23,Male,Rural,Food,Medication,Sanitation,Human
+23,Male,Suburban,Food,Medication,No sanitation,Human
+24,Male,Rural,Food,Medication,Sanitation,Human
+24,Female,Rural,Food,Medication,Sanitation,Human
+24,Female,Suburban,No food,Medication,No sanitation,Human
+24,Male,Urban,Food,No medication,Sanitation,Human
+24,Male,Rural,No food,No medication,No sanitation,Human
+25,Male,Suburban,No food,No medication,No sanitation,Human
+25,Male,Rural,No food,No medication,Sanitation,Human
+25,Female,Urban,Food,No medication,No sanitation,Human
+25,Female,Rural,No food,Medication,Sanitation,Human
+25,Male,Rural,No food,No medication,No sanitation,Human
+26,Female,Rural,Food,Medication,No sanitation,Human
+26,Female,Rural,No food,Medication,No sanitation,Human
+26,Female,Suburban,Food,No medication,No sanitation,Human
+26,Female,Suburban,Food,Medication,No sanitation,Human
+27,Male,Rural,Food,Medication,Sanitation,Human
+27,Male,Rural,Food,No medication,Sanitation,Human
+28,Male,Rural,Food,Medication,Sanitation,Human
+28,Male,Suburban,Food,Medication,Sanitation,Human
+28,Female,Urban,Food,No medication,Sanitation,Human
+28,Female,Rural,Food,Medication,Sanitation,Human
+29,Male,Rural,No food,Medication,Sanitation,Human
+29,Male,Rural,Food,No medication,Sanitation,Human
+29,Female,Rural,Food,Medication,Sanitation,Human
+29,Female,Rural,No food,Medication,Sanitation,Human
+29,Female,Rural,Food,Medication,No sanitation,Human
+30,Male,Suburban,Food,No medication,Sanitation,Human
+30,Male,Rural,Food,No medication,Sanitation,Human
+30,Female,Urban,No food,Medication,No sanitation,Human
+30,Female,Urban,Food,Medication,Sanitation,Human
+31,Female,Suburban,Food,Medication,No sanitation,Human
+32,Female,Urban,Food,No medication,Sanitation,Human
+32,Male,Rural,Food,No medication,Sanitation,Human
+32,Male,Rural,Food,Medication,No sanitation,Human
+32,Female,Rural,Food,Medication,Sanitation,Human
+32,Female,Rural,No food,No medication,No sanitation,Human
+33,Male,Rural,No food,No medication,No sanitation,Human
+33,Male,Suburban,Food,Medication,Sanitation,Human
+33,Female,Urban,Food,Medication,No sanitation,Human
+34,Female,Rural,Food,Medication,Sanitation,Human
+34,Female,Rural,Food,No medication,No sanitation,Human
+35,Male,Rural,Food,Medication,No sanitation,Human
+35,Male,Rural,Food,Medication,No sanitation,Human
+36,Female,Suburban,No food,No medication,No sanitation,Human
+36,Male,Rural,Food,Medication,No sanitation,Human
+36,Male,Urban,Food,No medication,Sanitation,Human
+36,Female,Rural,Food,Medication,Sanitation,Human
+36,Female,Rural,Food,Medication,Sanitation,Human
+37,Male,Rural,No food,Medication,Sanitation,Human
+37,Female,Rural,Food,Medication,Sanitation,Human
+37,Male,Rural,Food,No medication,Sanitation,Human
+38,Male,Rural,Food,No medication,Sanitation,Human
+38,Female,Rural,Food,Medication,Sanitation,Human
+39,Male,Urban,Food,Medication,Sanitation,Human
+39,Female,Urban,Food,Medication,Sanitation,Human
+40,Male,Suburban,Food,Medication,No sanitation,Human
+40,Male,Suburban,Food,Medication,Sanitation,Human
+40,Female,Rural,No food,No medication,Sanitation,Human
+41,Female,Rural,Food,Medication,No sanitation,Human
+41,Female,Rural,Food,Medication,Sanitation,Human
+42,Male,Rural,Food,No medication,No sanitation,Human
+42,Male,Urban,No food,Medication,Sanitation,Human
+42,Female,Rural,Food,No medication,Sanitation,Human
+42,Female,Rural,Food,No medication,No sanitation,Human
+43,Female,Rural,Food,Medication,Sanitation,Human
+44,Male,Suburban,Food,Medication,No sanitation,Human
+44,Female,Suburban,Food,No medication,No sanitation,Human
+45,Female,Rural,Food,Medication,Sanitation,Human
+45,Female,Rural,Food,Medication,No sanitation,Human
+45,Male,Rural,Food,No medication,Sanitation,Human
+46,Female,Rural,Food,Medication,No sanitation,Human
+46,Male,Rural,No food,Medication,No sanitation,Human
+47,Male,Suburban,Food,No medication,No sanitation,Human
+47,Male,Rural,Food,Medication,No sanitation,Human
+48,Female,Suburban,Food,Medication,No sanitation,Human
+48,Female,Suburban,No food,No medication,Sanitation,Human
+50,Female,Rural,No food,Medication,Sanitation,Human
+53,Female,Rural,No food,Medication,Sanitation,Human
+53,Female,Rural,Food,No medication,Sanitation,Human
+53,Female,Rural,Food,Medication,Sanitation,Human
+54,Male,Rural,Food,Medication,Sanitation,Human
+56,Male,Suburban,Food,No medication,Sanitation,Human
+56,Female,Rural,No food,No medication,Sanitation,Human
+56,Female,Suburban,No food,Medication,Sanitation,Human
+56,Male,Rural,Food,Medication,Sanitation,Human
+57,Male,Rural,Food,Medication,No sanitation,Human
+58,Female,Rural,Food,Medication,Sanitation,Human
+59,Male,Urban,Food,Medication,Sanitation,Human
+59,Male,Rural,Food,No medication,No sanitation,Human
+59,Female,Rural,No food,No medication,Sanitation,Human
+60,Female,Rural,No food,No medication,No sanitation,Human
+61,Male,Suburban,Food,Medication,Sanitation,Human
+61,Female,Rural,Food,Medication,Sanitation,Human
+62,Male,Suburban,Food,Medication,No sanitation,Human
+63,Female,Rural,Food,Medication,Sanitation,Human
+65,Female,Rural,Food,No medication,No sanitation,Human
+67,Male,Rural,No food,No medication,No sanitation,Human
+68,Male,Rural,No food,Medication,Sanitation,Human
+69,Female,Rural,Food,Medication,No sanitation,Human
+71,Female,Urban,Food,Medication,Sanitation,Human
+72,Male,Suburban,Food,Medication,No sanitation,Human
+74,Male,Suburban,Food,Medication,No sanitation,Human
+75,Female,Rural,Food,No medication,No sanitation,Human
+77,Female,Rural,Food,Medication,No sanitation,Human
+81,Male,Rural,Food,Medication,No sanitation,Human
+32,Male,Rural,Food,No medication,Sanitation,Human
+20,Female,Urban,Food,No medication,No sanitation,Zombie
+23,Male,Suburban,No food,No medication,No sanitation,Zombie
+25,Female,Rural,No food,No medication,No sanitation,Zombie
+28,Female,Suburban,No food,Medication,No sanitation,Zombie
+31,Female,Rural,No food,No medication,No sanitation,Zombie
+32,Male,Suburban,No food,No medication,Sanitation,Zombie
+42,Male,Rural,No food,No medication,Sanitation,Zombie
+43,Male,Urban,No food,No medication,No sanitation,Zombie
+44,Male,Rural,Food,No medication,No sanitation,Zombie
+45,Male,Urban,Food,Medication,No sanitation,Zombie
+47,Female,Urban,No food,Medication,No sanitation,Zombie
+48,Female,Suburban,No food,No medication,No sanitation,Zombie
+48,Female,Urban,No food,No medication,Sanitation,Zombie
+49,Female,Suburban,No food,No medication,Sanitation,Zombie
+49,Female,Suburban,Food,Medication,No sanitation,Zombie
+50,Male,Rural,No food,No medication,No sanitation,Zombie
+50,Male,Rural,No food,No medication,Sanitation,Zombie
+51,Female,Urban,No food,No medication,No sanitation,Zombie
+51,Male,Rural,Food,Medication,Sanitation,Zombie
+53,Male,Suburban,No food,No medication,No sanitation,Zombie
+54,Female,Urban,No food,No medication,Sanitation,Zombie
+57,Female,Suburban,Food,No medication,No sanitation,Zombie
+58,Female,Urban,No food,No medication,Sanitation,Zombie
+59,Male,Rural,Food,Medication,No sanitation,Zombie
+60,Male,Rural,No food,No medication,Sanitation,Zombie
+61,Male,Rural,No food,No medication,No sanitation,Zombie
+64,Female,Suburban,Food,Medication,No sanitation,Zombie
+65,Male,Urban,No food,Medication,No sanitation,Zombie
+66,Female,Urban,No food,No medication,No sanitation,Zombie
+68,Male,Suburban,Food,No medication,No sanitation,Zombie
+71,Male,Rural,Food,No medication,No sanitation,Zombie
+73,Female,Urban,Food,Medication,Sanitation,Zombie
+75,Male,Suburban,Food,Medication,No sanitation,Zombie
+78,Female,Suburban,No food,No medication,No sanitation,Zombie
+80,Male,Rural,No food,No medication,No sanitation,Zombie
+81,Female,Urban,Food,Medication,Sanitation,Zombie
+19,Male,Suburban,Food,Medication,No sanitation,Zombie
+25,Female,Urban,Food,No medication,No sanitation,Zombie
+28,Male,Urban,No food,No medication,No sanitation,Zombie
+29,Female,Urban,No food,No medication,No sanitation,Zombie
+37,Female,Suburban,No food,No medication,Sanitation,Zombie
+38,Male,Urban,No food,No medication,No sanitation,Zombie
+39,Male,Urban,No food,Medication,Sanitation,Zombie
+40,Male,Urban,No food,No medication,No sanitation,Zombie
+40,Male,Urban,No food,No medication,No sanitation,Zombie
+42,Male,Suburban,No food,No medication,Sanitation,Zombie
+44,Male,Urban,No food,No medication,No sanitation,Zombie
+45,Female,Urban,No food,No medication,No sanitation,Zombie
+46,Female,Urban,Food,No medication,No sanitation,Zombie
+76,Male,Rural,No food,No medication,Sanitation,Zombie
+47,Male,Urban,No food,No medication,No sanitation,Zombie
+49,Male,Rural,No food,No medication,No sanitation,Zombie
+51,Male,Urban,No food,No medication,No sanitation,Zombie
+54,Female,Urban,No food,No medication,No sanitation,Zombie
+76,Female,Urban,No food,Medication,Sanitation,Zombie
+56,Female,Suburban,No food,No medication,No sanitation,Zombie
+58,Female,Suburban,No food,No medication,Sanitation,Zombie
+59,Female,Rural,No food,No medication,No sanitation,Zombie
+60,Female,Rural,No food,No medication,Sanitation,Zombie
+62,Male,Urban,No food,No medication,No sanitation,Zombie
+67,Female,Urban,Food,Medication,Sanitation,Zombie
+68,Male,Suburban,No food,No medication,No sanitation,Zombie
+71,Male,Suburban,No food,No medication,Sanitation,Zombie
+71,Female,Urban,No food,No medication,No sanitation,Zombie
+78,Male,Urban,No food,No medication,No sanitation,Zombie
+18,Male,Urban,No food,No medication,Sanitation,Zombie
+21,Female,Urban,No food,No medication,No sanitation,Zombie
+32,Male,Urban,No food,No medication,No sanitation,Zombie
+41,Female,Rural,No food,No medication,No sanitation,Zombie
+43,Female,Rural,No food,No medication,Sanitation,Zombie
+48,Female,Suburban,No food,No medication,No sanitation,Zombie
+58,Male,Urban,Food,No medication,No sanitation,Zombie
+65,Male,Urban,No food,No medication,No sanitation,Zombie
+67,Female,Suburban,No food,No medication,No sanitation,Zombie
+68,Male,Suburban,Food,No medication,Sanitation,Zombie
+71,Male,Suburban,No food,No medication,No sanitation,Zombie
+76,Female,Urban,No food,No medication,Sanitation,Zombie
+82,Male,Urban,No food,No medication,No sanitation,Zombie
+85,Male,Urban,No food,Medication,Sanitation,Zombie

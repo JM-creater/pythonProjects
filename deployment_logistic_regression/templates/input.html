@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Logistic Regression Model</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+	<script>
+		function analyzeData() {
+			let temperature = $('#temperature').val()
+			let body_aches = $('#body_aches').val()
+			let runny_nose = $('#runny_nose').val()
+			let num_people_at_home = $('#num_people_at_home').val()
+			let working_at_home = $('#working_at_home').val()
+			let covid_vaccinated = $('#covid_vaccinated').val()
+
+			$.post('/model-api', {
+				'temperature': temperature,
+				'body_aches': body_aches,
+				'runny_nose': runny_nose,
+				'num_people_at_home': num_people_at_home,
+				'working_at_home': working_at_home,
+				'covid_vaccinated': covid_vaccinated
+				
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+</head>
+<body>
+
+	<div class="container">
+
+		<center><h1>My Logistic Regression Model</h1></center>
+		<input id="temperature" placeholder="Enter Temperature" type="text" class="form-control" />
+	
+		<select id="body_aches" class="form-control">
+			<option value="yes">Yes, I have body aches...</option>
+			<option value="no">No..</option>
+		</select>
+	
+		<select id="runny_nose" class="form-control">
+			<option value="yes">Yes, I have runny nose...</option>
+			<option value="no">No..</option>
+		</select>
+	
+		<input id="num_people_at_home" placeholder="Enter number of people at home" type="text" class="form-control" />
+	
+		<select id="working_at_home" class="form-control">
+			<option value="yes">Yes, I work at home..</option>
+			<option value="no">No, I don't...</option>
+		</select>
+	
+		<select id="covid_vaccinated" class="form-control">
+			<option value="yes">Yes, I am fully vaccinated..</option>
+			<option value="no">No, I am not vaccinated..</option>
+		</select>
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">Analyze</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

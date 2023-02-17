@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUBG Weapon Type Identifier</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+	<script>
+		function analyzeData() {
+			let bullet_type = $('#bullet_type').val()
+			let damage = $('#damage').val()
+			let magazine = $('#magazine').val()
+			let range = $('#range').val()
+			let fire_rate = $('#fire_rate').val()
+			let fire_mode = $('#fire_mode').val()
+			let bullet_speed = $('#bullet_speed').val()
+
+			$.post('/model-api', {
+				'bullet_type': bullet_type,
+				'damage': damage,
+				'magazine': magazine,
+				'range': range,
+				'fire_rate': fire_rate,
+				'fire_mode': fire_mode,
+				'bullet_speed': bullet_speed
+
+
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+	<style>
+		html{
+			background-image: url({{url_for('static',filename='builtin/pubg_pic.jpg')}});
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.btn-success{
+			border-radius: 1rem;
+    		font-size: 35px;
+    		width: 30%;
+    		background-color:#dca80f;
+    		color: #090907;
+    		font-family: fantasy;
+    	}
+
+    	.btn-success:hover{
+			background-color: #f1e4ca;
+			color: rgba(190,119,7);
+    	}
+    	body {
+    		background-color: transparent;
+    	}
+    	#container{
+    		background-color: transparent;
+    	}
+    	.form-control{
+    		background-color: #090907;
+    		opacity: .8;
+    		color: coral;
+    		margin-top: 2px;
+    		font-size: 20px;
+    		font-family: "Lucida Console", "Courier New", monospace;
+    	}
+    	h1{
+    		background-color: #dca80f;
+    		margin-top: 25px;
+    		color: #090907;
+    		font-family: fantasy;
+    		font-size: 60px;
+    		padding-right: 150px;
+    		padding-left: 150px;
+    	}
+    	#result{
+    		border-style: groove;
+			border-color: #FFDE40;
+			background-color:rgba(60, 60, 60, 0.5);
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-size: 25px;
+			color: white;
+    		margin-top: -17px;
+    	}
+    	.test{
+    		color: cyan;
+    		font-size: 33px;
+    		background-color: black;
+    	}
+
+    	select:invalid {
+        color: gray;
+        }
+
+		option[value=""][disabled] {
+			display: none;
+		}
+
+		option {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<center><h1>PUBG WEAPON TYPE IDENTIFIER</h1></center>
+
+		<select id="bullet_type" class="form-control" required>
+			<option value="" disabled selected hidden>Select Bullet Type</option>
+			<option value="7.62">Bullet 7.62</option>
+			<option value="5.56">Bullet 5.56</option>
+			<option value="9">Bullet 9</option>
+			<option value="0.45">Bullet 0.45</option>
+			<option value="12">Bullet 12</option>
+			<option value="0.3">Bullet 0.3</option>
+		</select>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="damage" placeholder="Enter Damage" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="magazine" placeholder="Enter Magazine Capacity" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="range" placeholder="Enter Range" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="fire_rate" placeholder="Enter Fire Rate (Can be input with decimal)" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<input id="bullet_speed" placeholder="Enter Bullet Speed" type="text" class="form-control" />
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">ANALYZE</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

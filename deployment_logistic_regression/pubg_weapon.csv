@@ -1,0 +1,31 @@
+bullet_type,damage,magazine,range,fire_rate,fire_mode,bullet_speed,type
+7.62,49,30,400,0.08,"Single, Automatic, Burst",715,Assault Rifle
+7.62,49,30,400,0.01,"Single, Automatic",710,Assault Rifle
+7.62,47,30,400,0.086,"Single, Automatic, Burst",715,Assault Rifle
+7.62,49,30,500,0.01,"Single, Burst",715,Assault Rifle
+5.56,43,30,600,0.086,"Single, Automatic",880,Assault Rifle
+5.56,43,30,600,0.096,"Single, Automatic",880,Assault Rifle
+5.56,43,30,600,0.086,"Single, Automatic",890,Assault Rifle
+5.56,43,30,600,0.01,"Single, Burst",900,Assault Rifle
+5.56,43,30,600,0.086,"Single, Automatic",880,Assault Rifle
+5.56,43,30,600,0.096,"Single, Automatic",880,Assault Rifle
+9,31,19,50,0.055,"Single, Automatic, Burst",300,Submachine Gun
+9,26,25,200,0.048,"Single, Automatic",350,Submachine Gun
+9,35,53,300,0.076,"Single, Automatic",300,Submachine Gun
+9,33,30,200,0.0645,"Single, Automatic, Burst",330,Submachine Gun
+0.45,40,30,200,0.086,"Single, Automatic",280,Submachine Gun
+0.45,39,25,300,0.092,"Single, Automatic, Burst",250,Submachine Gun
+12,216,2,25,0.2,Automatic,370,Shotgun
+12,216,5,25,0.7,Automatic,360,Shotgun
+12,198,5,25,0.25,Automatic,350,Shotgun
+0.3,105,5,900,0.09,Single,910,Sniper Rifle
+7.62,79,5,800,0.01,Single,790,Sniper Rifle
+7.62,75,5,800,0.01,Single,760,Sniper Rifle
+0.45,66,5,600,0.01,Single,710,Sniper Rifle
+12,160,2,25,0.01,Automatic,330,Pistol
+7.62,55,7,25,0.01,Automatic,330,Pistol
+0.45,55,6,25,1.85,Automatic,250,Pistol
+0.45,41,15,25,1.8,Automatic,250,Pistol
+9,35,7,25,1.9,Automatic,380,Pistol
+9,23,17,25,0.6,Automatic,375,Pistol
+9,22,20,60,0.25,Automatic,400,Pistol

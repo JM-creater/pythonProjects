@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PUBG Weapon Type Identifier</title>
+	<link rel="stylesheet" href="/static/builtin/bootstrap.min.css">
+	<script src="/static/builtin/jquery.min.js"></script>
+	<script>
+		function analyzeData() {
+			let wall_pen = $('#wall_pen').val()
+			let HDMG = $('#HDMG').val()
+			let magazine = $('#magazine').val()
+			let LDMG = $('#LDMG').val()
+			let price = $('#price').val()
+			let BDMG = $('#BDMG').val()
+
+			$.post('/model-api', {
+				'wall_pen': wall_pen,
+				'HDMG': HDMG,
+				'magazine': magazine,
+				'LDMG': LDMG,
+				'price': price,
+				'BDMG': BDMG
+
+
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+	<style>
+		html{
+			background-image: url({{url_for('static',filename='builtin/pubg_pic.jpg')}});
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.btn-success{
+			border-radius: 1rem;
+    		font-size: 35px;
+    		width: 30%;
+    		background-color:#dca80f;
+    		color: #090907;
+    		font-family: fantasy;
+    	}
+
+    	.btn-success:hover{
+			background-color: #f1e4ca;
+			color: rgba(190,119,7);
+    	}
+    	body {
+    		background-color: transparent;
+    	}
+    	#container{
+    		background-color: transparent;
+    	}
+    	.form-control{
+    		background-color: #090907;
+    		opacity: .8;
+    		color: coral;
+    		margin-top: 2px;
+    		font-size: 20px;
+    		font-family: "Lucida Console", "Courier New", monospace;
+    	}
+    	h1{
+    		background-color: #dca80f;
+    		margin-top: 25px;
+    		color: #090907;
+    		font-family: fantasy;
+    		font-size: 60px;
+    		padding-right: 150px;
+    		padding-left: 150px;
+    	}
+    	#result{
+    		border-style: groove;
+			border-color: #FFDE40;
+			background-color:rgba(60, 60, 60, 0.5);
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-size: 25px;
+			color: white;
+    		margin-top: -17px;
+    	}
+    	.test{
+    		padding: 5px;
+    		color: cyan;
+    		font-size: 33px;
+    		background-color: black;
+    	}
+    	select:invalid {
+        color: gray;
+        }
+
+		option[value=""][disabled] {
+			display: none;
+		}
+
+		option {
+			color: black;
+		}
+		img{
+			margin-top: 10px;
+		}
+		.percent{
+			color: coral;
+			background-color: black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<center><h1>PUBG WEAPON TYPE IDENTIFIER</h1></center>
+
+		<select id="wall_pen" class="form-control" required>
+			<option value="" disabled selected hidden>Wall Penetration</option>
+			<option value="Low">Low</option>
+			<option value="Medium">Medium</option>
+			<option value="High">High</option>
+		</select>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="HDMG" placeholder="Enter Head Damage" type="text" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="magazine" placeholder="Enter Magazine Capacity" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="LDMG" placeholder="Enter Low Damage" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="price" placeholder="Enter Price" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<input id="BDMG" placeholder="Enter Body Damage" type="text" class="form-control" />
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">ANALYZE</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+		<!-- <img src="/static/builtin/knn.jpg"> -->
+	</center>
+
+</div>
+
+</body>
+</html>

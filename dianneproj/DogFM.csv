@@ -1,0 +1,267 @@
+breed,height_inches,weight_lbs,has_testicles,has_vagina,leg_raise,squatting_down,findings
+Akita,26,80,no,yes,no,yes,female
+Akita,28,120,yes,no,yes,no,male
+Anatolian Sheepdog,27,100,no,yes,no,yes,female
+Anatolian Sheepdog,29,150,yes,no,yes,no,male
+Bernese Mountain Dog,23,85,no,yes,no,yes,female
+Bernese Mountain Dog,27,110,yes,no,yes,no,male
+Bloodhound,24,80,no,yes,no,yes,female
+Bloodhound,26,120,yes,no,yes,no,male
+Borzoi,26,70,no,yes,no,yes,female
+Borzoi,28,100,yes,no,yes,no,male
+Bullmastiff,25,100,no,yes,no,yes,female
+Bullmastiff,27,130,yes,no,yes,no,male
+Great Dane,32,120,no,yes,no,yes,female
+Great Dane,32,160,yes,no,yes,no,male
+Great Pyrenees,27,95,no,yes,no,yes,female
+Great Pyrenees,32,120,yes,no,yes,no,male
+Great Swiss Mountain Dog,23,130,no,yes,no,yes,female
+Great Swiss Mountain Dog,28,150,yes,no,yes,no,male
+Irish Wolfhound,28,90,no,yes,no,yes,female
+Irish Wolfhound,35,150,yes,no,yes,no,male
+Kuvasz,28,70,no,yes,no,yes,female
+Kuvasz,30,120,yes,no,yes,no,male
+Mastiff,27,175,no,yes,no,yes,female
+Mastiff,30,190,yes,no,yes,no,male
+Neopolitan Mastiff,24,100,no,yes,no,yes,female
+Neopolitan Mastiff,30,150,yes,no,yes,no,male
+Newfoundland,26,100,no,yes,no,yes,female
+Newfoundland,28,150,yes,no,yes,no,male
+Otter Hound,24,65,no,yes,no,yes,female
+Otter Hound,26,110,yes,no,yes,no,male
+Rottweiler,22,90,no,yes,no,yes,female
+Rottweiler,27,110,yes,no,yes,no,male
+Saint Bernard,25,110,no,yes,no,yes,female
+Saint Bernard,28,190,yes,no,yes,no,male
+Afghan Hound,25,50,no,yes,no,yes,female
+Afghan Hound,27,60,yes,no,yes,no,male
+American Foxhound,22,65,no,yes,no,yes,female
+American Foxhound,25,70,yes,no,yes,no,male
+Beauceron,24,100,no,yes,no,yes,female
+Beauceron,27,120,yes,no,yes,no,male
+Belgian Malinois,22,60,no,yes,no,yes,female
+Belgian Malinois,26,65,yes,no,yes,no,male
+Belgian Sheepdog,22,60,no,yes,no,yes,female
+Belgian Sheepdog,26,75,yes,no,yes,no,male
+Belgian Tervuren,22,60,no,yes,no,yes,female
+Belgian Tervuren,26,75,yes,no,yes,no,male
+Black And Tan Coonhound,23,50,no,yes,no,yes,female
+Black And Tan Coonhound,27,75,yes,no,yes,no,male
+Black Russian Terrier,25,80,no,yes,no,yes,female
+Black Russian Terrier,29,140,yes,no,yes,no,male
+Bouvier Des Flandres,23,75,no,yes,no,yes,female
+Bouvier Des Flandres,27,95,yes,no,yes,no,male
+Boxer,21,65,no,yes,no,yes,female
+Boxer,25,70,yes,no,yes,no,male
+Briard,23,74,no,yes,no,yes,female
+Briard,27,76,yes,no,yes,no,male
+Chesapeake Bay Retriever,21,55,no,yes,no,yes,female
+Chesapeake Bay Retriever,26,75,yes,no,yes,no,male
+Clumber Spaniel,19,35,no,yes,no,yes,female
+Clumber Spaniel,20,65,yes,no,yes,no,male
+Collie (Rough) & (Smooth),22,50,no,yes,no,yes,female
+Collie (Rough) & (Smooth),26,75,yes,no,yes,no,male
+Curly Coated Retriever,25,65,no,yes,no,yes,female
+Curly Coated Retriever,27,80,yes,no,yes,no,male
+Doberman Pinscher,26,60,no,yes,no,yes,female
+Doberman Pinscher,28,100,yes,no,yes,no,male
+English Foxhound,22,65,no,yes,no,yes,female
+English Foxhound,25,70,yes,no,yes,no,male
+English Setter,23,45,no,yes,no,yes,female
+English Setter,27,80,yes,no,yes,no,male
+German Shepherd Dog,22,75,no,yes,no,yes,female
+German Shepherd Dog,26,90,yes,no,yes,no,male
+German Shorthaired Pointer,20,50,no,yes,no,yes,female
+German Shorthaired Pointer,27,80,yes,no,yes,no,male
+German Wirehaired Pointer,22,60,no,yes,no,yes,female
+German Wirehaired Pointer,26,70,yes,no,yes,no,male
+Giant Schnauzer,25,70,no,yes,no,yes,female
+Giant Schnauzer,28,75,yes,no,yes,no,male
+Golden Retriever,21,55,no,yes,no,yes,female
+Golden Retriever,21,55,yes,no,yes,no,male
+Gordon Setter,23,45,no,yes,no,yes,female
+Gordon Setter,27,80,yes,no,yes,no,male
+Greyhound,27,60,no,yes,no,yes,female
+Greyhound,30,70,yes,no,yes,no,male
+Irish Setter,25,60,no,yes,no,yes,female
+Irish Setter,27,70,yes,no,yes,no,male
+Komondor,26.5,80,no,yes,no,yes,female
+Komondor,35.5,135,yes,no,yes,no,male
+Labrador Retriever,21,55,no,yes,no,yes,female
+Labrador Retriever,24,80,yes,no,yes,no,male
+Old English Sheepdog (Bobtail),15,45,no,yes,no,yes,female
+Old English Sheepdog (Bobtail),25,45,yes,no,yes,no,male
+Rhodesian Ridgeback,24,70,no,yes,no,yes,female
+Rhodesian Ridgeback,27,85,yes,no,yes,no,male
+Scottish Deerhound,28,75,no,yes,no,yes,female
+Scottish Deerhound,32,110,yes,no,yes,no,male
+Spinone Italiano,23,65,no,yes,no,yes,female
+Spinone Italiano,28,80,yes,no,yes,no,male
+Tibetan Mastiff,24,140,no,yes,no,yes,female
+Tibetan Mastiff,26,170,yes,no,yes,no,male
+Poodle Standard,20,60,no,yes,no,yes,female
+Poodle Standard,24,65,yes,no,yes,no,male
+Weimaraner,25,70,no,yes,no,yes,female
+Weimaraner,27,85,yes,no,yes,no,male
+Airdale Terrier,22,45,no,yes,no,yes,female
+Airdale Terrier,24,45,yes,no,yes,no,male
+American Staffordshire Terrier,17,40,no,yes,no,yes,female
+American Staffordshire Terrier,19,50,yes,no,yes,no,male
+American Water Spaniel,15,25,no,yes,no,yes,female
+American Water Spaniel,18,45,yes,no,yes,no,male
+Australian Cattle Dog,17,35,no,yes,no,yes,female
+Australian Cattle Dog,20,45,yes,no,yes,no,male
+Australian Shepherd,18,40,no,yes,no,yes,female
+Australian Shepherd,23,60,yes,no,yes,no,male
+Basset Hound,14,40,no,yes,no,yes,female
+Basset Hound,14,50,yes,no,yes,no,male
+Bearded Collie,20,40,no,yes,no,yes,female
+Bearded Collie,22,60,yes,no,yes,no,male
+Border Collie,19,40,no,yes,no,yes,female
+Border Collie,21,40,yes,no,yes,no,male
+Brittany,17,30,no,yes,no,yes,female
+Brittany,21,40,yes,no,yes,no,male
+Bull Dog,12,50,no,yes,no,yes,female
+Bull Dog,16,60,yes,no,yes,no,male
+Bull Terrier,21,50,no,yes,no,yes,female
+Bull Terrier,22,70,yes,no,yes,no,male
+Canaan Dog,19,35,no,yes,no,yes,female
+Canaan Dog,24,55,yes,no,yes,no,male
+Chinese Shar Pei,18,45,no,yes,no,yes,female
+Chinese Shar Pei,20,55,yes,no,yes,no,male
+Chow Chow,19,45,no,yes,no,yes,female
+Chow Chow,22,55,yes,no,yes,no,male
+Cocker Spaniel-American,15,25,no,yes,no,yes,female
+Cocker Spaniel-American,17,35,yes,no,yes,no,male
+Cocker Spaniel-English,19,45,no,yes,no,yes,female
+Cocker Spaniel-English,23,70,yes,no,yes,no,male
+Dalmatian,19,45,no,yes,no,yes,female
+Dalmatian,23,70,yes,no,yes,no,male
+English Springer Spaniel,20,45,no,yes,no,yes,female
+English Springer Spaniel,20,55,yes,no,yes,no,male
+Field Spaniel,18,35,no,yes,no,yes,female
+Field Spaniel,18,50,yes,no,yes,no,male
+Flat Coated Retriever,22,60,no,yes,no,yes,female
+Flat Coated Retriever,23,70,yes,no,yes,no,male
+Finnish Spitz,15,31,no,yes,no,yes,female
+Finnish Spitz,20,35,yes,no,yes,no,male
+Harrier,19,40,no,yes,no,yes,female
+Harrier,21,60,yes,no,yes,no,male
+Ibizan Hound,22,42,no,yes,no,yes,female
+Ibizan Hound,29,55,yes,no,yes,no,male
+Irish Terrier,18,25,no,yes,no,yes,female
+Irish Terrier,19,27,yes,no,yes,no,male
+Irish Water Spaniel,10,45,no,yes,no,yes,female
+Irish Water Spaniel,23,65,yes,no,yes,no,male
+Keeshond,17,35,no,yes,no,yes,female
+Keeshond,19,50,yes,no,yes,no,male
+Kerry Blue Terrier,17,30,no,yes,no,yes,female
+Kerry Blue Terrier,21,45,yes,no,yes,no,male
+Norwegian Elkhound,19,40,no,yes,no,yes,female
+Norwegian Elkhound,20,60,yes,no,yes,no,male
+Nova Scotia Duck Tolling Retriever,17,35,no,yes,no,yes,female
+Nova Scotia Duck Tolling Retriever,21,50,yes,no,yes,no,male
+Petit Basset Griffon Vendeen,13,30,no,yes,no,yes,female
+Petit Basset Griffon Vendeen,15,40,yes,no,yes,no,male
+Pharaoh Hound,21,45,no,yes,no,yes,female
+Pharaoh Hound,25,55,yes,no,yes,no,male
+Plott Hound,20,45,no,yes,no,yes,female
+Plott Hound,24,55,yes,no,yes,no,male
+Pointer,21,44,no,yes,no,yes,female
+Pointer,24,66,yes,no,yes,no,male
+Polish Lowland Sheepdog,16,30,no,yes,no,yes,female
+Polish Lowland Sheepdog,20,35,yes,no,yes,no,male
+Portuguese Water Dog,20,42,no,yes,no,yes,female
+Portuguese Water Dog,23,60,yes,no,yes,no,male
+Redbone Coonhound,21,50,no,yes,no,yes,female
+Redbone Coonhound,27,70,yes,no,yes,no,male
+Saluki,23,35,no,yes,no,yes,female
+Saluki,28,70,yes,no,yes,no,male
+Samoyed,19,50,no,yes,no,yes,female
+Samoyed,24,65,yes,no,yes,no,male
+Siberian Husky,20,40,no,yes,no,yes,female
+Siberian Husky,23,60,yes,no,yes,no,male
+Soft-Coated Wheaten Terrier,18,35,no,yes,no,yes,female
+Soft-Coated Wheaten Terrier,20,45,yes,no,yes,no,male
+Staffordshire Bull Terrier,14,24,no,yes,no,yes,female
+Staffordshire Bull Terrier,16,28,yes,no,yes,no,male
+Standard Schnauzer,17,33,no,yes,no,yes,female
+Standard Schnauzer,19,33,yes,no,yes,no,male
+Sussex Spaniel,15,40,no,yes,no,yes,female
+Sussex Spaniel,16,45,yes,no,yes,no,male
+Vizsla,48,22,no,yes,no,yes,female
+Vizsla,66,25,yes,yes,yes,yes,male
+Welsh Springer Spaniel,16,35,no,yes,no,yes,female
+Welsh Springer Spaniel,19,45,yes,no,yes,no,male
+Wirehaired Pointing Griffon,20,45,no,yes,no,yes,female
+Wirehaired Pointing Griffon,24,60,yes,no,yes,no,male
+American Eskimo,9,25,no,yes,no,yes,female
+American Eskimo,19,30,yes,no,yes,no,male
+Australian Terrier,10,10,no,yes,no,yes,female
+Australian Terrier,10,14,yes,no,yes,no,male
+Basenji,17,20,no,yes,no,yes,female
+Basenji,17,22,yes,no,yes,no,male
+Beagle,13,18,no,yes,no,yes,female
+Beagle,16,30,yes,no,yes,no,male
+Bedlington Terrier,15,18,no,yes,no,yes,female
+Bedlington Terrier,16,23,yes,no,yes,no,male
+Bichon Frise,9.5,10,no,yes,no,yes,female
+Bichon Frise,11.5,18,yes,no,yes,no,male
+Border Terrier,12,12,no,yes,no,yes,female
+Border Terrier,15,15,yes,no,yes,no,male
+Boston Terrier,14,15,no,yes,no,yes,female
+Boston Terrier,15,25,yes,no,yes,no,male
+Brussels Griffon,7,6,no,yes,no,yes,female
+Brussels Griffon,8,12,yes,no,yes,no,male
+Cairn Terrier,9,14,no,yes,no,yes,female
+Cairn Terrier,10,14,yes,no,yes,no,male
+Cardigan Welsh Corgi,10,25,no,yes,no,yes,female
+Cardigan Welsh Corgi,12,35,yes,no,yes,no,male
+Cavalier King Charles Spaniel,10,15,no,yes,no,yes,female
+Cavalier King Charles Spaniel,15,20,yes,no,yes,no,male
+Dachshund,7,16,no,yes,no,yes,female
+Dachshund,10,32,yes,no,yes,no,male
+Dandie Dinmont Terrier,18,8,no,yes,no,yes,female
+Dandie Dinmont Terrier,24,11,yes,no,yes,no,male
+English Toy Spaniel,10,9,no,yes,no,yes,female
+English Toy Spaniel,10,15,yes,no,yes,no,male
+Fox Terrier ?? Smooth,13,15,no,yes,no,yes,female
+Fox Terrier ?? Smooth,16,20,yes,no,yes,no,male
+Fox Terrier ?? Wirehair,13,15,no,yes,no,yes,female
+Fox Terrier ?? Wirehair,16,20,yes,no,yes,no,male
+French Bulldog,11,17,no,yes,no,yes,female
+French Bulldog,12,28,yes,no,yes,no,male
+German Pinscher,16,25,no,yes,no,yes,female
+German Pinscher,19,35,yes,no,yes,no,male
+Glen Imaal Terrier,14,34,no,yes,no,yes,female
+Glen Imaal Terrier,14,36,yes,no,yes,no,male
+Lakeland Terrier,13,15,no,yes,no,yes,female
+Lakeland Terrier,14,17,yes,no,yes,no,male
+Manchester Terrier (Standard),15,17,no,yes,no,yes,female
+Manchester Terrier (Standard),16,18,yes,no,yes,no,male
+Poodle Miniature,10,20,no,yes,no,yes,female
+Poodle Miniature,15,20,yes,no,yes,no,male
+Pug,10,14,no,yes,no,yes,female
+Pug,11,22,yes,no,yes,no,male
+Puli,16,29,no,yes,no,yes,female
+Puli,17,33,yes,no,yes,no,male
+Schipperke,10,12,no,yes,no,yes,female
+Schipperke,13,18,yes,no,yes,no,male
+Scottish Terrier,10,18,no,yes,no,yes,female
+Scottish Terrier,12,22,yes,no,yes,no,male
+Sealyham Terrier,12,18,no,yes,no,yes,female
+Sealyham Terrier,12,20,yes,no,yes,no,male
+Shetland Sheepdog (Sheltie),13,14,no,yes,no,yes,female
+Shetland Sheepdog (Sheltie),16,20,yes,no,yes,no,male
+Shiba Inu,13,15,no,yes,no,yes,female
+Shiba Inu,16,30,yes,no,yes,no,male
+Shih Tzu,8,9,no,yes,no,yes,female
+Shih Tzu,11,16,yes,no,yes,no,male
+Chihuahua,6,2,no,yes,no,yes,female
+Chihuahua,9,5,yes,no,yes,no,male
+Maltese,8,4,no,yes,no,yes,female
+Maltese,10,6,yes,no,yes,no,male
+Pomeranian,12,3,no,yes,no,yes,female
+Pomeranian,12,7,yes,no,yes,no,male
+Yorkshire Terrier,8,3,no,yes,no,yes,female
+Yorkshire Terrier,8,7,yes,no,yes,no,male

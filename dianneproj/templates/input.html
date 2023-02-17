@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ocier's Logistic Regression Model</title>
+	<link rel="stylesheet" href="/static/builtin/bootstrap.min.css">
+	<script src="/static/builtin/jquery.min.js"></script>
+	<script>
+		function analyzeData() {
+			let breed = $('#breed').val()
+			let height_inches = $('#height_inches').val()
+			let weight_lbs = $('#weight_lbs').val()
+			let has_testicles = $('#has_testicles').val()
+			let has_vagina = $('#has_vagina').val()
+			let leg_raise = $('#leg_raise').val()
+			let squatting_down = $('#squatting_down').val()
+			$.post('/model-api', {
+				'breed': breed,
+				'height_inches': height_inches,
+				'weight_lbs': weight_lbs,
+				'has_testicles': has_testicles,
+				'has_vagina': has_vagina,
+				'leg_raise': leg_raise,
+				'squatting_down': squatting_down
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+
+	<style>
+		body{
+			background-image: url({{url_for('static',filename='builtin/bg.jpg')}});
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			text-align: center;
+		}
+		.title {
+			text-align: center;
+			color: white;
+		}
+		select:invalid {
+        color: gray;
+        }
+
+		option[value=""][disabled] {
+			display: none;
+		}
+
+		option {
+			color: black;
+		}
+		#result{
+
+			border-color: #FFDE40;
+			background-color:rgba(60, 60, 60, 0.5);
+			font-family: "Lucida Console", "Courier New", monospace;
+			font-size: 25px;
+			color: white;
+    		margin-top: -17px;
+    	}
+	</style>
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="title">
+		<h1>OCIER'S FINAL PROJECT</h1>
+	</div>
+
+	<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="breed" placeholder="Enter Breed" type="text" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="height_inches" placeholder="Enter Height" type="text" class="form-control"/>
+				</div>
+			</div>
+		</div>
+
+	<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="weight_lbs" placeholder="Enter Weight" type="text" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="has_testicles" class="form-control" required>
+						<option value="" disabled selected hidden>Does it have testicles?</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+	<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="has_vagina" class="form-control" required>
+						<option value="" disabled selected hidden>Does it have vagina?</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="leg_raise" class="form-control" required>
+						<option value="" disabled selected hidden>Does it do leg raise while urinating?</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+	<select id="squatting_down" class="form-control" required>
+		<option value="" disabled selected hidden>Does it do squatting down with the legs flexed more?</option>
+		<option value="yes">Yes</option>
+		<option value="no">No</option>
+	</select>
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-primary">Analyze</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weapon Stats Identifier</title>
+	<link rel="stylesheet" href="static/builtin/bootstrap.min.css">
+	<script src="static/builtin/jquery.min.js"></script>
+	<script>
+		function analyzeData() {
+			let safe = $('#safe').val()
+			let abused = $('#abused').val()
+			let sexual_abused = $('#sexual_abused').val()
+			let teaching = $('#teaching').val()
+			let grooming = $('#grooming').val()
+			let identify = $('#identify').val()
+			let recovering = $('#recovering').val()
+			let action = $('#action').val()
+
+			$.post('/model-api', {
+				'safe': safe,
+				'abused': abused,
+				'sexual_abused': sexual_abused,
+				'teaching': teaching,
+				'grooming': grooming,
+				'identify': identify,
+				'recovering': recovering,
+				'action': action
+
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+	<style>
+		body{
+			background-image: url({{url_for('static',filename='builtin/bg.jpg')}});
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		text{
+			color: green;
+		}
+
+		h1{
+			color:rgba(0,0,0);
+			opacity: 80%;
+			margin-top:30px;
+			font-size: 50px;
+			background-color: rgba(227,0,206, 0.8);
+			border-radius: 10px 10px 10px 10px;
+		}
+
+		.form-control{
+			background-color: rgba(0,0,0, 0.8);
+			border-radius: 10px 10px 10px 10px;
+			color: rgba(227,0,206);
+			font-size: 25px;
+			margin-top: 10px;
+		}
+
+		.btn-success{
+			background-color: rgba(227,0,206);
+			border-radius: 10px 10px 10px 10px;
+			width: 30%;
+			font-size: 25px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			opacity: 80%;
+		}
+
+		.btn-success:hover{
+			background-color:rgba(90,2,128);
+		}
+
+		#result{
+			background-color: rgba(0,0,0, 0.8);
+			color: rgba(227,0,206);
+			font-size: 25px;
+			border-radius: 15px 50px 30px;
+			border-style: groove:
+			border-color: grey;
+		}
+		select:invalid {
+        color: gray;
+        }
+
+		option[value=""][disabled] {
+			display: none;
+		}
+
+		option {
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+		<center><h1>Child Sexual Abuse Prediction Model</h1></center>
+
+		<select id="body_aches" class="form-control" required>
+			<option value="" disabled selected hidden>Does a child is safe with their family?</option>
+			<option value="Agree">Agree</option>
+			<option value="Disagree">Disagree</option>
+		</select>
+
+		<select id="abused" class="form-control" required>
+			<option value="" disabled selected hidden>Are children mainly abused by strangers?</option>
+			<option value="Agree">Agree</option>
+			<option value="Disagree">Disagree</option>
+		</select>
+
+		<select id="sexual_abused" class="form-control" required>
+			<option value="" disabled selected hidden>Does knowledge about sexual abuse prevention not need to be taught to male children?</option>
+			<option value="Agree">Agree</option>
+			<option value="Disagree">Disagree</option>
+		</select>
+
+		<select id="teaching" class="form-control" required>
+			<option value="" disabled selected hidden>"Teaching sexual abuse prevention in school is not necessary. It will make children curious about sex"</option>
+			<option value="Agree">Agree</option>
+			<option value="Disagree">Disagree</option>
+		</select>
+
+		<select id="grooming" class="form-control" required>
+			<option value="" disabled selected hidden>Do you know what child grooming is?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+
+		<select id="identify" class="form-control" required>
+			<option value="" disabled selected hidden>Do you know what signs to look for to identify if your child has been abused?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+
+		<select id="recovering" class="form-control" required>
+			<option value="" disabled selected hidden>Do you think children need post abuse counseling for recovering?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+
+		<select id="action" class="form-control" required>
+			<option value="" disabled selected hidden>Do you think you should take legal action against the abuser of your child?</option>
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</select>
+
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">Analyze</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

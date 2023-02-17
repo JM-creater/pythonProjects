@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Logistic Regression Model</title>
+	<link rel="stylesheet" href="/static/bootstrap.min.css">
+	<script src="/static/jquery.min.js"></script>
+	<script>
+		function analyzeData() {
+			let age = $('#age').val()
+			let sex = $('#sex').val()
+			let rurality = $('#rurality').val()
+			let food = $('#food').val()
+			let medication = $('#medication').val()
+			let sanitation = $('#sanitation').val()
+
+			$.post('/model-api', {
+				'age': age,
+				'sex': sex,
+				'rurality': rurality,
+				'food': food,
+				'medication': medication,
+				'sanitation': sanitation
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+	<style>
+		html{
+			background: #621e1e;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		#result{
+			color: coral;
+		 	font-size: larger;
+    		font-family: arial;
+    		background: rgb(121,9,86);
+    		margin-top: -17px;
+		}
+		.btn-success{
+			width: 100%;
+			font-size: 30px;
+			font-family: arial;
+		}
+    	body {
+    		background-color: transparent;
+    	}
+    	#container{
+    		background-color: transparent;
+    	}
+    	.form-control{
+    		background-color: black;
+    		opacity: .8;
+    		color: white;
+    		margin-top: 2px;
+    		font-size: 20px;
+    		font-family: arial;
+    	}
+    	h1{
+    		margin-top: 40px;
+    		color: black;
+    		font-family: fantasy;
+    		font-size: 60px;
+    	}
+    	#result{
+			border-style: groove;
+			border-color: white;
+			background: red;
+			font-family: fantasy;
+			font-size: 30px;
+			color: black;
+    	}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<center><h1>My Logistic Regression Model</h1></center>
+		<input id="age" class="form-control" placeholder="Enter Age">
+		<select id="sex" class="form-control">
+			<option value="none" disabled hidden selected>Gender</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+		</select>
+	
+		<select id="rurality" class="form-control">
+			<option value="none" disabled hidden selected>Rurality</option>
+			<option value="Rural">Rural</option>
+			<option value="Suburban">Suburban</option>
+			<option value="Urban">Urban</option>
+		</select>
+
+		<select id="food" class="form-control">
+			<option value="none" disabled hidden selected>Does he/she have Food?</option>
+			<option value="No food">No food</option>
+			<option value="Food">Food</option>
+		</select>
+
+		<select id="medication" class="form-control">
+			<option value="none" disabled hidden selected>Does he/she have Medication?</option>
+			<option value="No medication">No medication</option>
+			<option value="Medication">Medication</option>
+		</select>
+	
+		<select id="sanitation" class="form-control">
+			<option value="none" disabled hidden selected>Does he/she have Sanitation?</option>
+			<option value="No sanitation">No sanitation</option>
+			<option value="Sanitation">Sanitation</option>
+		</select>
+
+
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">Analyze</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

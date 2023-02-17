@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Logistic Regression Model</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+	<script>
+		function analyzeData() {
+			let age = $('#age').val()
+			let sex = $('#sex').val()
+			let chest_pain_type = $('#chest_pain_type').val()
+			let resting_bp = $('#resting_bp').val()
+			let chol_in_mg = $('#chol_in_mg').val()
+			let fasting_blood_sugar = $('#fasting_blood_sugar').val()
+			let restecg = $('#restecg').val()
+			let maxheart_rate_achieved = $('#maxheart_rate_achieved').val()
+
+			$.post('/model-api', {
+				'age': age,
+				'sex': sex,
+				'chest_pain_type': chest_pain_type,
+				'resting_bp': resting_bp,
+				'chol_in_mg': chol_in_mg,
+				'fasting_blood_sugar': fasting_blood_sugar,
+				'restecg': restecg,
+				'maxheart_rate_achieved': maxheart_rate_achieved
+				
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+
+	<style>
+		body {
+		background-color: purple;
+		}
+		h1 {
+		color: white;
+		}
+		#result {
+		color: white;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<center><h1>Heart Failure Prediction</h1></center>
+
+		<input id="age" placeholder="Enter Age" type="text" class="form-control" />
+	
+		<select id="sex" class="form-control">
+			<option value="f">Female</option>
+			<option value="m">Male</option>
+		</select>
+	
+		<input id="chest_pain_type" placeholder="Enter type of chest pain" type="text" class="form-control" />
+	
+		<input id="resting_bp" placeholder="Enter resting blood pressure" type="text" class="form-control" />
+
+		<input id="chol_in_mg" placeholder="Enter cholesterol in MG" type="text" class="form-control" />
+
+		<input id="fasting_blood_sugar" placeholder="Enter fasting blood pressure" type="text" class="form-control" />
+
+		<input id="restecg" placeholder="Enter resting electrocardiographic" type="text" class="form-control" />
+
+		<input id="maxheart_rate_achieved" placeholder="Enter max heart rate achieved" type="text" class="form-control" />
+	
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-primary">Test Result</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction if a student wil fail</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="  crossorigin="anonymous"></script>
+	<script>
+		function analyzeData() {
+			let student_number = $('#student_number').val()
+			let quizzes = $('#quizzes').val()
+			let performance_task = $('#performance_task').val()
+			let activities = $('#activities').val()
+			let projects = $('#projects').val()
+			let submit_on_time = $('#submit_on_time').val()
+			let submit_late = $('#submit_late').val()
+			let paid = $('#paid').val()
+
+			$.post('/model-api', {
+				'student_number': student_number,
+				'quizzes': quizzes,
+				'performance_task': performance_task,
+				'activities': activities,
+				'projects' : projects,
+				'submit_on_time' : submit_on_time,
+				'submit_late' : submit_late,
+				'paid' : paid
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+</head>
+<body>
+
+<div class="container">
+
+	<center><h1>Prediction If A Student Will Fail or Pass</h1></center>
+	<input id="student_number" placeholder="Enter student number(1-2)" type="text" class="form-control" />
+
+	<select id="quizzes" class="form-control">
+		<option value="yes">Yes, I have submitted all of the quizzes</option>
+		<option value="no">No, I don't...</option>
+	</select>
+
+	<select id="performance_task" class="form-control">
+		<option value="yes">Yes, I performed well this semester</option>
+		<option value="no">No, I don't...</option>
+	</select>
+
+	<select id="activities" class="form-control">
+		<option value="yes">Yes, I have submitted all of the activities</option>
+		<option value="no">No, I don't...</option>
+	</select>
+
+	<select id="projects" class="form-control">
+		<option value="yes">Yes, I have sumbitted all the projects </option>
+		<option value="no">No, I dont submit any...</option>
+	</select>
+
+    <select id="submit_on_time" class="form-control">
+		<option value="yes">Yes, I have sumbitted all the deliverables on time </option>
+		<option value="no">No, I dont...</option>
+	</select>
+
+	 <select id="submit_late" class="form-control">
+		<option value="yes">I have submitted the deliverables overdue</option>
+		<option value="no">No, I dont...</option>
+	</select>
+
+	 <select id="paid" class="form-control" required>
+		<option value="" disabled selected hidden>Do you have unpaid balance?</option>
+		<option value="yes">Yes I have</option>
+		<option value="no">No, I dont have...</option>
+	</select>
+
+	<br />
+	<center>
+		<button onClick="analyzeData();" type="button" class="btn btn-success">Analyze</button>
+	</center>
+	<br />
+	<center>
+		<div id="result"></div>
+	</center>
+
+</div>
+
+</body>
+</html>

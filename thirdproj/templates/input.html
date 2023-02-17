@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Promotion Prediction</title>
+	<link rel="stylesheet" href="static/builtin/bootstrap.min.css">
+	<script src="static/builtin/jquery.min.js"></script>
+	<script>
+		function analyzeData() {
+			let employee_id = $('#employee_id').val()
+			let department = $('#department').val()
+			let region = $('#region').val()
+			let education = $('#education').val()
+			let gender = $('#gender').val()
+			let recruitment_channel = $('#recruitment_channel').val()
+			let no_of_trainings = $('#no_of_trainings').val()
+			let age = $('#age').val()
+			let previous_year_rating = $('#previous_year_rating').val()
+			let length_of_service = $('#length_of_service').val()
+			let awards_won = $('#awards_won').val()
+			let avg_training_score = $('#avg_training_score').val()
+
+			$.post('/model-api', {
+				'employee_id': employee_id,
+				'department': department,
+				'region': region,
+				'education': education,
+				'gender': gender,
+				'recruitment_channel': recruitment_channel,
+				'no_of_trainings': no_of_trainings,
+				'age': age,
+				'previous_year_rating': previous_year_rating,
+				'length_of_service': length_of_service,
+				'awards_won': awards_won,
+				'avg_training_score': avg_training_score
+				
+			}, function(data) {
+				$('#result').html(data)
+			})
+		}
+	</script>
+
+	<style>
+		body{
+		background-image: url({{url_for('static',filename='builtin/bg.jpg')}});
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		}
+
+		.title-text {
+		text-align: center;
+		}
+
+		.form-control{
+		background-color: rgba(60, 60, 60 0.8);
+		color: black;
+		}
+
+		h1{
+		font-family: impact, sans-serif;
+		margin-top: 30px;
+		color: white;
+		}
+
+		select:invalid {
+        color: gray;
+        }
+
+		option[value=""][disabled] {
+			display: none;
+		}
+
+		option {
+			color: black;
+		}
+
+		.button {
+		  font-size: 1em;
+		  padding: 10px;
+		  color: #fff;
+		  border: 2px solid #06D85F;
+		  border-radius: 20px/50px;
+		  text-decoration: none;
+		  cursor: pointer;
+		  transition: all 0.3s ease-out;
+		}
+
+		.button:hover {
+		  background: #06D85F;
+		}
+
+		.overlay {
+		  position: fixed;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  background: rgba(0, 0, 0, 0.7);
+		  transition: opacity 500ms;
+		  visibility: hidden;
+		  opacity: 0;
+		}
+		.overlay:target {
+		  visibility: visible;
+		  opacity: 1;
+		}
+
+		.popup {
+		  margin: 70px auto;
+		  padding: 20px;
+		  background: #fff;
+		  border-radius: 5px;
+		  width: 30%;
+		  position: relative;
+		  transition: all 5s ease-in-out;
+		  justify-content: center;
+		}
+
+		.popup h2 {
+		  margin-top: 0;
+		  color: #333;
+		  font-family: Tahoma, Arial, sans-serif;
+		}
+		.popup .close {
+		  position: absolute;
+		  top: 20px;
+		  right: 30px;
+		  transition: all 200ms;
+		  font-size: 30px;
+		  font-weight: bold;
+		  text-decoration: none;
+		  color: #333;
+		}
+		.popup .close:hover {
+		  color: #06D85F;
+		}
+		.popup .content {
+		  max-height: 30%;
+		  overflow: auto;
+		}
+
+		@media screen and (max-width: 700px){
+		  .box{
+			width: 70%;
+		  }
+		  .popup{
+			width: 70%;
+		  }
+		}
+
+		select.form-control {
+		  background-image:
+			linear-gradient(45deg, transparent 50%, gray 50%),
+			linear-gradient(135deg, gray 50%, transparent 50%),
+			linear-gradient(to right, #ccc, #ccc);
+		  background-position:
+			calc(100% - 20px) calc(1em + 2px),
+			calc(100% - 15px) calc(1em + 2px),
+			calc(100% - 2.5em) 0.5em;
+		  background-size:
+			5px 5px,
+			5px 5px,
+			1px 1.5em;
+		  background-repeat: no-repeat;
+		}
+
+		select.form-control:focus {
+		  background-image:
+			linear-gradient(45deg, green 50%, transparent 50%),
+			linear-gradient(135deg, transparent 50%, green 50%),
+			linear-gradient(to right, #ccc, #ccc);
+		  background-position:
+			calc(100% - 15px) 1em,
+			calc(100% - 20px) 1em,
+			calc(100% - 2.5em) 0.5em;
+		  background-size:
+			5px 5px,
+			5px 5px,
+			1px 1.5em;
+		  background-repeat: no-repeat;
+		  border-color: green;
+		  outline: 0;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="title-text">
+			<h1>Employee Evaluation For Promotion</h1>
+		</div>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="employee_id" placeholder="Enter Employee ID" type="text" class="form-control"/>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="department" class="form-control" required>
+						<option value="" disabled selected hidden>Select Department</option>
+						<option value="Sales & Marketing">Sales & Marketing</option>
+						<option value="Operations">Operations</option>
+						<option value="Technology">Technology</option>
+						<option value="Analytics">Analytics</option>
+						<option value="R&D">R&D</option>
+						<option value="Procurement">Procurement</option>
+						<option value="Finance">Finance</option>
+						<option value="HR">HR</option>
+						<option value="Legal">Legal</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<input id="region" placeholder="Enter Region" type="text" class="form-control" />
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="education" class="form-control" required>
+						<option value="" disabled selected hidden>Select Education Degree</option>
+						<option value="Master">Master's & Above</option>
+						<option value="Bachelor">Bachelor's</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<select id="gender" class="form-control" required>
+						<option value="" disabled selected hidden>Select Gender</option>
+						<option value="f">Female</option>
+						<option value="m">Male</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<select id="recruitment_channel" class="form-control" required>
+			<option value="" disabled selected hidden>Select Recruitment Channel</option>
+			<option value="sourcing">Sourcing</option>
+			<option value="other">Other</option>
+		</select>
+
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="no_of_trainings" placeholder="Enter # of Trainings" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="age" placeholder="Enter Age" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="previous_year_rating" placeholder="Enter Previous Year Rating" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="length_of_service" placeholder="Enter Length of Service" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+		<div class="row my-3">
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="awards_won" placeholder="Enter Awards Won" type="text" class="form-control" />
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="form-outline">
+					<input id="avg_training_score" placeholder="Enter Average Training Score" type="text" class="form-control" />
+				</div>
+			</div>
+		</div>
+
+	<br />
+		<div>
+			<a onClick="analyzeData();" type="button" class="button" href="#popup1">ANALYZE</a>
+		</div>
+	<br />
+
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<a class="close" href="#">&times;</a>
+				<div class="content">
+					<div id="result"></div>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+</body>
+</html>
